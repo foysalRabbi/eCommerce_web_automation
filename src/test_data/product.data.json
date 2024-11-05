@@ -1,0 +1,102 @@
+{
+  "product_info": {
+    "sortDescription": "Sort description",
+    "fullDescription": "Full description",
+    "published": true,
+    "showOnHomePage": true,
+    "displayOrder": "2",
+    "productTags": "snacks",
+    "adminTags": "",
+    "manufacturers": "Ifad",
+    "visibility": "Both",
+    "allowCustomerReviews": true,
+    "showReviewInProductBox": true,
+    "showDeliveryTimeInProductBox": true,
+    "markAsNew": true,
+    "unit": "Hali",
+    "productName": "Generic Bronze Ball"
+  },
+  "prices": {
+    "price": "212.00",
+    "taxExempt": true,
+    "taxCategory": "Local Items"
+  },
+  "shipping": {
+    "shippingEnabled": false,
+    "weight": "100",
+    "length": "50",
+    "width": "100",
+    "height": "30",
+    "freeShipping": true,
+    "additionalShippingCharge": "150",
+    "hideShippingInfo": false
+  },
+  "inventory": {
+    "trackInventory": false,
+    "minimumCartQTY": "1",
+    "maximumCartQTY": "100",
+    "allowedQuantities": "100"
+  },
+  "multimedia": {
+    "pictures": ""
+  },
+  "categories": {
+    "categoryName": "Cooking Essentials"
+  },
+  "specificationAttributes": {
+    "attributeType": "Package wrapping",
+    "attribute": "Package wrapping",
+    "attributeOption": "Cardboard",
+    "allowFiltering": true,
+    "showOnProductPage": true,
+    "displayOrder": "2"
+  },
+  "productAttribute": {
+    "attribute": "Size",
+    "textPrompt": "Basmati Rice",
+    "isRequired": true,
+    "controlType": "Dropdown List",
+    "displayOrder": "2"
+  },
+  "darkStores": {
+    "darkStoreName": "Mirpur, Dhaka",
+    "alwaysAvailable": true,
+    "allowExpressDelivery": false,
+    "enableVatTax": false,
+    "turnOverType": "Slow Moving",
+    "price": "100",
+    "stock": "100",
+    "rackNumber": "300",
+    "thresHoldStock": "100",
+    "deliveryRange": "1 hours - 2 hours",
+    "deliveryDateRangeFrom": {
+      "days": "1",
+      "hours": "22",
+      "minutes": "10"
+    },
+    "deliveryDateRangeTo": {
+      "days": "4",
+      "hours": "22",
+      "minutes": "10"
+    }
+  },
+  "seo": {
+    "seName": "se-name",
+    "metaTitle": "Meta Title",
+    "metaKeyWords": "Meta Keyword",
+    "metaDescription": "Meta Description"
+  },
+  "toastMessages": {
+    "productUpdateSuccesMssg": "The product has been updated successfully.",
+    "productCreateSuccesMssg": "The new product has been added successfully.",
+    "errorMsg": "Bad Request",
+    "productDeleteSuccesMssg": "The product has been deleted successfully.",
+    "productDeleteAllSuccessMsg": "",
+    "productDeleteAllErrorMsg": "",
+    "productDeleteSuccessMsg": "The new product has been deleted successfully."
+  },
+  "errorMessage": {
+    "productNameRequiredErrorMessage": "Please provide a name.",
+    "productSKURequiredErrorMessage": "Please provide an SKU."
+  }
+}

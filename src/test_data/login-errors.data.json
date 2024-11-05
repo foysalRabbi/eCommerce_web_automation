@@ -1,0 +1,6 @@
+{
+    "loginPageErrorsList":{
+        "invalidCredentialsErrorMessage": "Invalid email or password.",
+        "requiredValueErrorMessage": "This field is required"
+    }
+}

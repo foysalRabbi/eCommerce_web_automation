@@ -1,0 +1,14 @@
+# Local History for Visual Studio Code
+.history/
+.vscode/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Node.js
+node_modules/
+
+# Playwright
+.playwright/
+playwright-report/
+test-results/

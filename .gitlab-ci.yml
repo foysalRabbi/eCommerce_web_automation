@@ -1,0 +1,51 @@
+stages:
+  - test
+  - deploy
+
+variables:
+  MS_TEAMS_WEBHOOK_URL: ${{ secrets.MS_TEAMS_WEBHOOK_URL }}  
+
+Started E2E Testing:
+  stage: test
+  image: mcr.microsoft.com/playwright:v1.39.0-jammy
+  script:
+    - npm ci
+    - npm run env:dev
+  artifacts:
+    paths:
+      - playwright-report/
+    when: always
+    expire_in: 1 week
+    reports:
+      junit: ./playwright-report/result.xml
+
+Sending Team Notification:
+  stage: deploy
+  only:
+    - main
+    - merge_request
+  script:    
+    - |
+      message=$(cat playwright-report/custom-summary.txt)
+      content=$(echo "$message" | awk 'BEGIN{ RS=","; ORS="\n" } 1')
+      payload='{
+        "@type": "MessageCard",
+        "@context": "https://schema.org/extensions",
+        "themeColor": "00FF00",
+        "summary": "TEST RUN COMPLETED",
+        "sections": [
+          {
+            "activityTitle": "Shwapno E2E Test",
+            "activitySubtitle": "This result contains only the summery of test report for details report and attachment please download the artifact",
+            "activityImage": "https://pbs.twimg.com/profile_images/1318604600677527552/stk8sqYZ_400x400.png",
+            "facts": [
+              {
+                "name": "Test Summery",
+                "value": "'"$content"'"
+              }
+            ]
+          }
+        ]
+      }'
+      curl -X POST -H "Content-Type: application/json" -d "$payload" "$MS_TEAMS_WEBHOOK_URL"
+  when: always     

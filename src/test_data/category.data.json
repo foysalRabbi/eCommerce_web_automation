@@ -1,0 +1,41 @@
+{
+  "category_info": {
+    "name": "Electronics",
+    "description": "",
+    "parentCategory": ""
+  },
+  "display": {
+    "published": true,
+    "showOnHomePage": true,
+    "includeInTopMenu": true,
+    "pageSize": "10",
+    "priceRangeFiltering": true,
+    "displayOrder": "5",
+    "visibility": "Web"
+  },
+  "images": {
+    "menuIconImagePath": "../test_data/images/menu_icon.jpg",
+    "bannerMobileImagePath": "../test_data/images/bannerMobileImage.jpeg",
+    "bannerDesktopImagePath": "../test_data/images/bannerDesktopImage.jpg",
+    "bannerAppImagePath": "../test_data/images/bannerAppImage.jpeg",
+    "picturesMobileImagePath": "../test_data/images/pictureMobileImage.jpg",
+    "picturesDesktopImagePath": "../test_data/images/picturesDesktopImage.jpg",
+    "picturesAppImagePath": "../test_data/images/pictureAppImage.jpg"
+  },
+  "seo": {
+    "seName": "",
+    "metaTitle": "",
+    "metaKey": "home-decor",
+    "metaDes": "Lorem ipsum description"
+  },
+  "toastMessages": {
+    "categoryCreateSuccessMsg": "The new category has been added successfully.",
+    "errorMsg": "Bad Request",
+    "categoryDeleteAllSuccessMsg": "Category deleted successfully",
+    "categoryDeleteAllErrorMsg": "Delete failed",
+    "categoryDeleteSuccessMsg": "The category has been deleted successfully."
+  },
+  "errorList": {
+    "categoryNameRequired": "Please provide a name."
+  }
+}
